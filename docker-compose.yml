@@ -1,0 +1,64 @@
+version: "3.8"
+services:
+    web:
+        build: ./web/
+        ports: 
+            - "443:443"
+        container_name: web
+        hostname: web
+        restart: always
+        volumes:
+             - ./web/:/var/www/html/
+             - ./default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf
+             - ./ssl/:/etc/apache2/sites-available/ssl/
+        links:
+            - database    
+        networks:
+            perigrammata_network:
+                ipv4_address: 172.60.1.3
+    database:
+        container_name: database
+        image: mysql:5.7
+        hostname: database
+        expose:
+            - "3306"
+        ports:
+            - "3307:3306"
+        restart: always
+        environment:
+            - MYSQL_USER=perigrammata_db
+            - MYSQL_PASSWORD=9ohmHG31
+            - MYSQL_ROOT_PASSWORD=9ohmHG31
+            - MYSQL_DATABASE=perigrammata_db
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d
+            - persistent_volume:/var/lib/mysql 
+        networks:
+            perigrammata_network:   
+                ipv4_address: 172.60.1.4
+    phpmyadmin_project:
+        image: phpmyadmin/phpmyadmin
+        container_name: phpmyadmin_project
+        hostname: phpmyadmin_project
+        ports:
+            - "8001:80"
+        restart: always
+        links:
+            - database
+        environment:
+            PMA_ARBITRARY: 1  
+            PMA_HOST: 'database'
+            PMA_USER: 'root'
+            PMA_PASSWORD: '9ohmHG31' 
+        networks:
+            perigrammata_network:   
+                ipv4_address: 172.60.1.5
+   
+networks:
+    perigrammata_network: 
+        ipam:
+            config: 
+                - subnet: 172.60.1.0/24   
+volumes: 
+    persistent_volume:  
+

@@ -1,0 +1,68 @@
+.event-custom1{
+    background-color: plum !important;
+    text-decoration: none !important; 
+  }
+
+.event-custom2{
+  background-color: slateblue  !important;
+  text-decoration: none !important;
+}
+
+.event-custom3{
+  background-color: rgb(100, 96, 52)  !important;
+  text-decoration: none !important;
+}
+
+
+.event-custom4{
+  background-color: yellowgreen  !important;
+  text-decoration: none !important;
+}
+
+
+.event-custom5{
+  background-color: peru !important;
+  text-decoration: none !important;
+}
+
+#activities option[value="1"]{
+    font-family: Arial;
+    font-size: 16px;
+    color: #ca94ca;
+    background-color: #fff;
+}
+#activities option[value="2"]{
+  font-family: Arial;
+  font-size: 16px;
+  color:#6a5acd ;
+  background-color: #fff;
+}
+#activities option[value="3"]{
+  font-family: Arial;
+  font-size: 16px;
+  color: #646034;
+  background-color: #fff;
+}
+#activities option[value="4"]{
+  font-family: Arial;
+  font-size: 16px;
+  color: #9acd32 ;
+  background-color: #fff;
+}
+#activities option[value="12"]{
+  font-family: Arial;
+  font-size: 16px;
+  color:  #cd853f ;
+  background-color: #fff;
+}
+#activities option:hover {
+    background-color: #ccc;
+}
+
+input.styled-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  /* Add more styling properties as needed */
+}
