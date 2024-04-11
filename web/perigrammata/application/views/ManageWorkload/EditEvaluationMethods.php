@@ -151,7 +151,17 @@
                     </div>
                 </div><!-- /.container-fluid -->
             </section>
-
+            <div class="row">
+                <div class="col-10" style="margin-left:20px;">
+                    <div class="callout callout-info">
+                    <h5><i class="fas fa-info"></i> Σημείωση:</h5>
+                    &nbsp; Εδώ εμφανίζονται οι μέθοδοι αθροιστικής αξιολόγησης του μαθήματος. Ένα μάθημα μπορεί να αξιολογείται με μία τελική εξέταση ή με ένα 
+                        συνδυασμό παραγόντων (πρόοδος, εργαστήριο, ασκήσεις, project κλπ) κάθε ένας από τους οποίους συμμετέχει με ένα ποσοστό στην αθροιστική 
+                        αξιολόγηση του μαθήματος. Εάν σε κάποιο μάθημα υπάρχουν περισσότερες από μία μέθοδοι αθροιστικής αξιολόγησης (π.χ απαλλακτικό Project) 
+                        μπορείτε να προσθέσετε περισσότερες απο μία επιλέγοντας 'προσθήκη επιπλέον μεθόδου' στο τέλος της σελίδας.
+                    </div>
+                </div>
+            </div>
             <!-- Main content -->
             <section class="content">
                 <form id="learningOutcomes" method="POST" action="<?php echo URL . "ProfessorNewController/updateLearningOutcomes?CourseId=" . $courseID; ?>">
@@ -195,15 +205,11 @@
                                                 echo '<td>';
                                                 echo "<select class='browser-default custom-select' name='bonus[" . $p . "][" . $categoryId . "]'>";
                                                 //echo '<option></option>';
-                                                if ($Course['LangId'] == 1) {
-                                                    echo "<option value='3'> </option>";
-                                                } else {
-                                                    echo "<option value='1'> </option>";
-                                                }
                                                 foreach ($bonus as $bonusId => $row) {
                                                     $bonusId_value = isset($CourseAssessment2[$p][$categoryId]['BonusId']) ? $CourseAssessment2[$p][$categoryId]['BonusId'] : '';
                                                     $selected = $bonusId == $bonusId_value ? 'selected' : '';
-                                                    echo '<option value="' . $bonusId . '" ' . $selected . '>' . $row['Choices'] . '</option>';
+                                                    $title = $bonusId == 3 ? "Aποτελεί τη βαθμολογία που προσμετράται στη βαθμολόγηση του φοιτητή" : "Εφαρμόζεται κατα τη διάρκεια της διδασκαλίας (πληροφοριακού χαρακτήρα)" ;
+                                                    echo '<option title="'.$title.'" value="' . $bonusId . '" ' . $selected . '>' . $row['Choices'] . '</option>';
                                                 }
 
                                                 echo '</select>';
@@ -254,7 +260,13 @@
                     ?>
                     <input type="hidden" id="numOfmethods" name="numOfmethods" value="<?php echo $p; ?>">
                     <div class="text-center">
-                        <button type="button" id="newMethodButton" class="btn btn-default btn-rounded" style=" text-transform: none;" data-toggle="modal" data-target="#evaluationModal<?php echo $p; ?>"><?php echo t_addExtra ?></button>
+                        <button type="button" id="newMethodButton" 
+                                class="btn btn-default btn-rounded" 
+                                style=" text-transform: none;" data-toggle="modal" 
+                                data-target="#evaluationModal<?php echo $p; ?>"
+                                title = "Πατήστε εδώ για να προσθέσετε νεα μέθοδο αξιολόγησης">
+                                <?php echo t_addExtra ?></button>
+                        
                         <button type="submit" name="finish_creation" id="finish_creation" class=" btn btn-default btn-rounded"><i class="far fa-save"></i> <?php echo t_save; ?></button>
                     </div>
                     <br>

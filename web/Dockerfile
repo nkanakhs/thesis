@@ -4,8 +4,6 @@ RUN a2enmod rewrite
 
 COPY . /var/www/html
 
-#COPY apache_ssl.conf /etc/apache2/sites-available/000-default.conf
-
 RUN apt-get update && apt-get install -y \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
@@ -20,7 +18,6 @@ RUN \
  apt-get update 
 
 
-# Store PHP Configs at /usr/local/etc/php/conf.d
 RUN echo "upload_max_filesize = 500M" >> /usr/local/etc/php/conf.d/upload_large_dumps.ini \
     && echo "post_max_size = 500M"       >> /usr/local/etc/php/conf.d/upload_large_dumps.ini \
     && echo "memory_limit = -1"           >> /usr/local/etc/php/conf.d/upload_large_dumps.ini \
