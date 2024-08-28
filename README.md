@@ -7,7 +7,6 @@ _The Web application was developed to enhance the organization and scheduling of
 - [**Installation**](#installation)
 - [**Usage**](#usage)
 - [**Architecture**](#architecture)
-- [**Contributing**](#contributing)
 
 ## **Features**
 - **User authentication and authorization**
@@ -74,7 +73,16 @@ The application offers a wide range of additional features, including:
 
 These features are designed to enhance the academic management experience, providing both faculty and administrators with powerful tools to streamline their workflow.
 
+### Architecture
 
+The application is built using a robust technology stack that ensures scalability, maintainability, and ease of deployment. The key technologies and tools employed are:
+
+- **PHP:** Utilized for backend development, handling server-side logic and interactions with the database.
+- **JavaScript:** Employed for creating dynamic and interactive user interfaces on the client side.
+- **HTML/CSS:** Used for structuring and styling the web pages, providing a responsive and user-friendly experience.
+- **Docker:** Leveraged for containerizing the application, which facilitates consistent development, testing, and deployment across different environments.
+
+This stack provides a solid foundation for developing a reliable and efficient application, enhancing both developer productivity and application performance.
 
 
 
