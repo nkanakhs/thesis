@@ -64,6 +64,16 @@ Adding the event to the calendar, performing all necessary conflict checks, and 
 
 ![Event Insertion](https://github.com/nkanakhs/thesis/blob/main/web/images/Calendar7.PNG)
 
+Additional Features
+The application offers a wide range of additional features, including:
+
+- **Student Evaluation:** Professors can evaluate students based on various criteria.
+- **Schedule Overview:** Provides an overview of colleagues' schedules for better collaboration.
+- **Grade Export:** Allows the export of student grades in various formats.
+- **Workload Reports:** For administrators, the application enables the export of detailed reports on both professor and course workloads, categorized by semester, department, and type of activity.
+
+These features are designed to enhance the academic management experience, providing both faculty and administrators with powerful tools to streamline their workflow.
+
 
 
 
