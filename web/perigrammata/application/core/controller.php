@@ -39,7 +39,7 @@ class Controller
         // "objects", which means all results will be objects, like this: $result->user_name !
         // For example, fetch mode FETCH_ASSOC would return results like this: $result["user_name] !
         $db_username = 'perigrammata_db'; // 'emil'; //'root'; //'perigrammata_db';
-        $db_password =  '9ohmHG31'; //'@Perigrammata_14_03_2023_modip_#'; //'@perigrammata_14_03_2023_modip_#'; //'@ad1p_c0urses_29_01_2020'; //'Emilsite4ever_#';
+        $db_password =  '';
         $this->conn = new PDO('mysql:host=database;dbname=perigrammata_db;charset=utf8;port=3306', 
         $db_username, $db_password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET CHARACTER SET UTF8")); 
 
