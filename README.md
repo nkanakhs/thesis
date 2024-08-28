@@ -35,4 +35,4 @@ _The Web application was developed to enhance the organization and scheduling of
 1. Login Page
 The first step in using the application is logging in. Below is a screenshot of the login page where users can enter their credentials to access the system.
 
-![Login Screenshot](https://example.com/screenshot.png)
+![Login Screenshot](https://github.com/nkanakhs/thesis/blob/main/web/images/Login.PNG)
