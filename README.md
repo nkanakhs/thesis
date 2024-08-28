@@ -15,6 +15,7 @@ _The Web application was developed to enhance the organization and scheduling of
 - **Admin dashboard** with analytics
 - **Course management** partners and activities insertion & student evaluation
 - **Personal calendar with analytic activities** for each professor and each course
+- **Calendar Event Integration with Conflict Detection** checks if the professor is assessed with an activity on another course 
 - **Icalendar integration** works for all online calendars like Google calendar, Outlook etc.
 - **Supervision of grades** also keeps track of older grades
 
@@ -27,3 +28,16 @@ _The Web application was developed to enhance the organization and scheduling of
     *A mySQL container where our database is located
     *A phpmyadmin container in order to provide a visual interface with the database
 3. On the server we install SSL certificates so that our application can be safely accessed.
+
+
+## **Usage**
+
+Some of the core functionalities of the application are described below:
+
+1. Login Page
+The first step in using the application is logging in. Below is a screenshot of the login page where users can enter their credentials to access the system.
+
+![Login Screenshot](https://github.com/nkanakhs/thesis/blob/main/web/images/Login.PNG)
+
+2. Dashboard Overview
+After logging in, users are taken to the main dashboard. The dashboard provides an overview of the professor's list of courses 
