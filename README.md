@@ -37,15 +37,21 @@ Some of the core functionalities of the application are described below:
 1. Login Page
 The first step in using the application is logging in. Below is a screenshot of the login page where users can enter their credentials to access the system.
 
+
+
 ![Login Screenshot](https://github.com/nkanakhs/thesis/blob/main/web/images/Login.PNG)
 
 2. Dashboard Overview
 After logging in, users are taken to the main dashboard. The dashboard provides an overview of the professor's list of courses
 
+
+
 ![Welcome Screen](https://github.com/nkanakhs/thesis/blob/main/web/images/WelcomeScreen.PNG)
 
 3. Course Management
 In the course management section, users can add, update, or delete courses partners activities and evaluation courses. This section allows the management of course-related information, such as class schedules and resources.
+
+
 
 ![Manage Activities](https://github.com/nkanakhs/thesis/blob/main/web/images/AddActivity.PNG)
 
@@ -54,6 +60,7 @@ When creating a new event, the system checks for potential overlaps with other c
 
 ![Event Creation](https://github.com/nkanakhs/thesis/blob/main/web/images/calendar4.png)
 
+Adding the event to the calendar, performing all necessary conflict checks, and notifying the user accordingly.
 
 ![Event Insertion](https://github.com/nkanakhs/thesis/blob/main/web/images/Calendar7.PNG)
 
