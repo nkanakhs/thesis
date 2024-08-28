@@ -40,4 +40,26 @@ The first step in using the application is logging in. Below is a screenshot of 
 ![Login Screenshot](https://github.com/nkanakhs/thesis/blob/main/web/images/Login.PNG)
 
 2. Dashboard Overview
-After logging in, users are taken to the main dashboard. The dashboard provides an overview of the professor's list of courses 
+After logging in, users are taken to the main dashboard. The dashboard provides an overview of the professor's list of courses
+
+![Welcome Screen](https://github.com/nkanakhs/thesis/blob/main/web/images/WelcomeScreen.PNG)
+
+3. Course Management
+In the course management section, users can add, update, or delete courses partners activities and evaluation courses. This section allows the management of course-related information, such as class schedules and resources.
+
+![Manage Activities](https://github.com/nkanakhs/thesis/blob/main/web/images/AddActivity.PNG)
+
+4. Calendar Event Creation with Conflict Detection
+When creating a new event, the system checks for potential overlaps with other course activities. If there are any conflicts, the user is notified to prevent scheduling issues.
+
+![Event Creation](https://github.com/nkanakhs/thesis/blob/main/web/images/calendar4.png)
+
+
+![Event Insertion](https://github.com/nkanakhs/thesis/blob/main/web/images/Calendar7.PNG)
+
+
+
+
+
+
+
