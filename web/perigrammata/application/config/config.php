@@ -44,7 +44,7 @@ define('DB_TYPE', 'mysql');
 define('DB_HOST', 'database');
 define('DB_NAME', 'perigrammata_db');
 define('DB_USER', 'perigrammata_db');
-define('DB_PASS', '9ohmHG31');
+define('DB_PASS', '');
 define("DB_PORT","3307");  
 define('DB_CHARSET', 'utf8');   
 
